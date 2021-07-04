@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Dosis&family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika&family=Dosis&family=Kanit&display=swap');
 
 
 * {
@@ -67,8 +67,8 @@ button {
     color: cyan;
     background: transparent;
     font-size: 20px;
-    font-weight: 900;
-    font-family: Kanit;
+    font-weight: 500;
+    font-family: Signika;
     transition: all 0.3 ease 0s;
     text-shadow: 3px 3px 3px rgb(0, 0, 0);
 }
