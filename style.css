@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Signika&family=Dosis&family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika&family=Dosis&family=Kanit&family=Iceland&display=swap');
 
 
 * {
@@ -15,18 +15,17 @@ html, body {
 }
 
 header {
+    position: fixed;
+    z-index: 1;
+    height: 10%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
-    background-color: black;
+    background-color: rgb(37, 37, 37);
     box-shadow: 0px 1px 8px cyan;
     word-spacing: 4px;
-}
-
-li, a, button, span {
-    text-transform: uppercase;
-    text-decoration: none;  
 }
 
 .logo {
@@ -35,6 +34,7 @@ li, a, button, span {
     font-size: 30px;
     font-weight: 900;
     font-family: Dosis;
+    text-transform: uppercase;
 }
 
 .nav_links {
@@ -52,27 +52,105 @@ li, a, button, span {
     font-weight: 900;
     font-family: 'Dosis', sans-serif;
     color: white;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .nav_links li:hover {
-    transform: scale(1.15);
-    text-shadow: 0px 0px 10px cyan;
+    transform: scale(1.2);
+    text-shadow: 0px 0px 15px cyan;
 }
 
-button {
-    padding: 5px 20px;
+header a button {
+    padding: 5px 30px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    color: cyan;
+    color: white;
     background: transparent;
+    text-transform: uppercase;
     font-size: 20px;
     font-weight: 500;
     font-family: Signika;
-    transition: all 0.3 ease 0s;
-    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    background-color: #4CD964;
+    transition: transform 0.4s;
 }
 
-button:hover {
-    background-color: rgb(31, 31, 31);
+header a button:hover {
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.15);
+}
+
+#home {
+    height: 720px;
+    padding: 0;
+    padding-top: 5%;
+}
+
+#home {
+    background-image: url('images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-header {
+    position: relative;
+    width: 50%;
+    float: left;
+    padding: 130px 20px 50px 90px;
+    height: 550px;
+}
+
+.home-image {
+    position: relative;
+    width: 50%;
+    float: right;
+    text-align: center;
+    padding: 10px 60px;
+    height: 550px;
+}
+
+.home-header h1 {
+    font-size: 50px;
+    font-weight: 900;
+    font-family: Dosis;
+    color: cyan;
+}
+
+.home-header span {
+    font-size: 60px;
+    font-weight: 900;
+    font-family: Signika;
+    color: white;
+    text-shadow: 0px 0px 8px #5AE4A7;
+}
+
+.home-header button {
+    font-size: 20px;
+    font-weight: 900;
+    font-family: Dosis;
+    color: white;
+    background: transparent;
+    border: none;
+    padding: 10px 25px;
+    border: 1px solid rgb(101, 109, 112);
+}
+
+img {
+    width: 500px;
+    height: 500px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
